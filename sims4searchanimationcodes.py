@@ -2,7 +2,7 @@ import streamlit as st
 import re
 
 st.title("Sims 4 Animation Codes Keyword Search")
-st.markdown("**_Up to Life and Death EP_**")
+st.markdown("**Up to Life and Death EP**")
 
 keywords_input = st.text_input("Enter keywords (separated by space):", placeholder="e.g., clean counter")
 
