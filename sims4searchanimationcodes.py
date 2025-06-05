@@ -1,7 +1,8 @@
 import streamlit as st
 import re
 
-st.title("Sims 4 Animation Codes Up to Life and Death Keyword Search")
+st.title("Sims 4 Animation Codes Keyword Search")
+st.markdown("**_Up to Life and Death EP_**")
 
 keywords_input = st.text_input("Enter keywords (separated by space):", placeholder="e.g., clean counter")
 
@@ -10,7 +11,7 @@ if st.button("Search"):
         st.warning("Please enter at least one keyword.")
     else:
         try:
-            with open("Sims 4 All Animation Codes Up to Life and Death.txt", "r", encoding="utf-8") as file:
+            with open("Sims_4_All_Animation_Codes_Up_to_Life_and_Death.txt", "r", encoding="utf-8") as file:
                 lines = file.readlines()
 
             keywords = keywords_input.strip().split()
